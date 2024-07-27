@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B. M. Silver's Creative Space</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById('nav-menu');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>B. M. Silver's Creative Space</h1>
+    </header>
+    <nav>
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+        <ul id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="projects.html">Projects</a>
+                <ul>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="comics.html">Comics</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="other-projects.html">Other Projects</a></li>
+                </ul>
+            </li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2>Welcome to My Creative Space</h2>
+        <p>Hi, I'm B. M. Silver, also known as Wardenvoid in the gaming world. This is my personal space where I share my creative works including books, comics, games, and art. Feel free to explore and reach out if you have any questions or comments.</p>
+    </div>
+</body>
+</html>
